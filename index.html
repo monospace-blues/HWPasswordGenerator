@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title, here (using bootstrap) we add a row that centers our title text-->
+        <div class="row justify-content-center">
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <!-- Using a jumbotron because I feel like it works... i think? -->
+                <div class="jumbotron border">
+                    <div class="row">
+                        <div class="col-md-12 align-self-start">
+                            <h2>Generate a password</h2>
+                            <hr>
+                        </div>
+                        
+                        <!-- Another column for where the generated password text will be placed -->
+                        <div class="col-md-12 py-5 px-lg-5 border bg-light rounded">
+
+                            <div class="mx-auto text-center" style="width: 400px;">
+                                <!-- This will be used for the generated password -->
+                                <p id="passwordGen" class="lead">Your secure password</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Column for the button placement -->
+                        <div class="col-md-12 my-2 text-center">
+                            <hr>
+                            <!-- Our button that will be used for generating the password (triggering the javascript) -->
+                            <button type="button" class="btn btn-danger btn-lg rounded-pill">Generate Password</button>
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    
+
+                </div>
+                
+
+            </div>
+        </div>
+        
+
+    </div>
+    
+
+    <!-- added link to script.js in the html file -->
+    <script src="./script.js"></script>
+</body>
+</html>
